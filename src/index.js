@@ -36,7 +36,7 @@ let months = [
   "Dec",
 ];
 let month = months[now.getMonth()];
-para.innerHTML = `${hours}:${minutes} <br/>${day} ${date}th, ${month} ${year}`;
+para.innerHTML = `${hours}:${minutes} <br/>${day} ${date}, ${month} ${year}`;
 
 function showTemperature(response) {
   console.log(response);
