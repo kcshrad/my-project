@@ -1,0 +1,91 @@
+h1 {
+  color: #6ad5f8;
+  font-size: 25px;
+  padding: 15px;
+  margin: 0 auto;
+}
+#city {
+  border-radius: 80px;
+  padding: 10px;
+  border-color: #6ad5f8;
+}
+.form-control {
+  border-radius: 80px;
+  padding: 5px;
+  border-color: #6ad5f8;
+  border-width: 2px;
+  width: 100px;
+}
+#current-location {
+  border-radius: 80px;
+  padding: 5px;
+  border-color: #6ad5f8;
+  background-color: #6ad5f8;
+
+  margin: 5px;
+}
+
+#time {
+  margin: 0;
+  padding: 15px;
+  font-size: 15px;
+  color: #6ad5f8;
+  font-weight: bold;
+}
+
+.weather {
+  display: block;
+  width: 100px;
+}
+img {
+  width: 30px;
+}
+
+.container {
+  max-width: 500px;
+  background-color: rgb(245, 245, 245);
+  border: solid;
+  border-radius: 15px;
+  border-color: #6ad5f8;
+  bottom: 0;
+  max-height: 600px;
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+  right: 0;
+}
+
+.description {
+  color: #6ad5f8;
+  margin: 0;
+  padding: 15px;
+}
+.currentTemp {
+  font-size: 40px;
+  color: #6ad5f8;
+}
+.celsius,
+.fahrenheit {
+  border: none;
+  color: #6ad5f8;
+}
+
+#days {
+  color: #6ad5f8;
+}
+#pressure {
+  color: #6ad5f8;
+}
+#humidity {
+  color: #6ad5f8;
+}
+.message {
+  font-weight: initial;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+.week {
+  color: #6ad5f8;
+}

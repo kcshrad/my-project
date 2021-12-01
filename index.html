@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <div class="row">
+          <div class="col-9">
+            <input type="search" placeholder="Enter city" id="city" />
+          </div>
+
+          <br />
+          <div class="col-3">
+            <input type="Submit" value="Search" class="form-control" />
+          </div>
+        </div>
+      </form>
+      <button id="current-location">Current Location</button>
+      <div class="row mt-3">
+        <div class="col-6">
+          <h1 id="current-city">Sydney</h1>
+          <p id="time">14:30 <br />Sunday OCT 31</p>
+          <img src="src/images/sun-and-cloud-clip-art.png" class="weather" />
+
+          <div class="description">
+            <div class="col-12">Partly Cloudy</div>
+          </div>
+          <div class="col-12">
+            <div class="currentTemp">21°C</div>
+
+            <button class="celsius">°C</button>
+            <span class="divider"> | </span>
+            <button class="fahrenheit">°F</button>
+          </div>
+
+          <div class="col-12">
+            <div id="humidity">Humidity 48%</div>
+          </div>
+          <div class="col-12">
+            <div id="pressure">Pressure</div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="row" id="days">
+            <div class="col-12 bg-light p-3 border">
+              <strong class="week">Mon</strong>
+              <img src="src/images/rain.png" /> L:11°C H:24°C
+            </div>
+            <br />
+            <div class="col-12 bg-light p-3 border">
+              <strong class="week">Tue</strong>
+              <img src="src/images/thunder.png" /> L:14°C H:25°
+            </div>
+            <br />
+            <div class="col-12 bg-light p-3 border">
+              <strong class="week">Wed</strong>
+              <img src="src/images/cloudy.png" /> L:11°C H:24°C
+            </div>
+            <br />
+            <div class="col-12 bg-light p-3 border">
+              <strong class="week">Thu</strong>
+              <img src="src/images/sun-and-cloud-clip-art.png" />L:13°C H:25°C
+            </div>
+            <br />
+            <div class="col-12 bg-light p-3 border">
+              <strong class="week"> Fri</strong>
+              <img src="src/images/cloudy.png" />L:15°C H:23°C
+            </div>
+            <br />
+            <div class="col-12 bg-light p-3 border">
+              <strong class="week">Sat</strong
+              ><img src="src/images/rain.png" />L: 16°C H: 23°C
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="message">Weather for Sydney, Australia</p>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
