@@ -89,3 +89,7 @@ img {
 .week {
   color: #6ad5f8;
 }
+#code,
+a {
+  font-size: small;
+}
