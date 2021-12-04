@@ -39,6 +39,7 @@ function formatDate(timestamp) {
   let month = months[now.getMonth()];
   return `${hours}:${minutes} <br/>${day} ${date}, ${month} ${year}`;
 }
+
 function showTemperature(response) {
   console.log(response);
   document.querySelector("#current-city").innerHTML = response.data.name;

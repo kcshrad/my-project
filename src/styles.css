@@ -32,7 +32,10 @@ h1 {
   color: #6ad5f8;
   font-weight: bold;
 }
-
+p {
+  color: #6ad5f8;
+  font-size: 15px;
+}
 .weather {
   display: block;
   width: 50px;
