@@ -21,7 +21,6 @@ h1 {
   padding: 5px;
   border-color: #6ad5f8;
   background-color: #6ad5f8;
-
   margin: 5px;
 }
 
@@ -36,9 +35,9 @@ p {
   color: #6ad5f8;
   font-size: 15px;
 }
-.weather {
+#icon {
   display: block;
-  width: 50px;
+  width: 100px;
 }
 img {
   width: 30px;
@@ -46,7 +45,7 @@ img {
 
 .container {
   max-width: 500px;
-  background-color: rgb(245, 245, 245);
+
   border: solid;
   border-radius: 15px;
   border-color: #6ad5f8;
