@@ -1,43 +1,44 @@
-let now = new Date();
-let para = document.querySelector("#time");
+function formatDate(timestamp) {
+  let now = new Date(timestamp);
+  //let para = document.querySelector("#time");
 
-let hours = now.getHours();
-if (hours < 10) {
-  hours = `0${hours}`;
+  let hours = now.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = now.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let year = now.getFullYear();
+  let date = now.getDate();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[now.getDay()];
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  let month = months[now.getMonth()];
+  return `${hours}:${minutes} <br/>${day} ${date}, ${month} ${year}`;
 }
-let minutes = now.getMinutes();
-if (minutes < 10) {
-  minutes = `0${minutes}`;
-}
-let year = now.getFullYear();
-let date = now.getDate();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-let months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-let month = months[now.getMonth()];
-para.innerHTML = `${hours}:${minutes} <br/>${day} ${date}, ${month} ${year}`;
-
 function showTemperature(response) {
   console.log(response);
   document.querySelector("#current-city").innerHTML = response.data.name;
@@ -60,6 +61,9 @@ function showTemperature(response) {
   let pressure = document.querySelector("#pressure");
   let newPressure = response.data.main.pressure;
   pressure.innerHTML = ` Pressure ${newPressure}`;
+
+  let timeElement = document.querySelector("#time");
+  timeElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 function search(searchInput) {
