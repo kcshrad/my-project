@@ -47,8 +47,9 @@ function showTemperature(response) {
   //let temperatureInput = Math.round(response.data.main.temp);
   //let newTemp = document.querySelector(".currentTemp");
   //newTemp.innerHTML = `${temperatureInput}°C`;
+  celsiusTemperature = response.data.main.temp;
   document.querySelector(".currentTemp").innerHTML = `${Math.round(
-    response.data.main.temp
+    celsiusTemperature
   )}°C`;
 
   let weatherType = response.data.weather[0].main;
@@ -88,8 +89,27 @@ function searchCurrent(event) {
   //axios.get(apiUrl).then(showTemperature);
   search(searchInput);
 }
+function showFahrenheit(event) {
+  event.preventDefault();
+  let currentTemp = document.querySelector(".currentTemp");
+  fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  currentTemp.innerHTML = Math.round(fahrenheitTemperature);
+}
+let celsiusTemperature = null;
+function showCelsius(event) {
+  event.preventDefault();
+  let currentTemp = document.querySelector(".currentTemp");
+  currentTemp.innerHTML = Math.round(celsiusTemperature);
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCurrent);
+
+let fahrenheitButton = document.querySelector(".fahrenheit");
+fahrenheitButton.addEventListener("click", showFahrenheit);
+
+let celsiusButton = document.querySelector(".celsius");
+celsiusButton.addEventListener("click", showCelsius);
 
 search("New York");
 
@@ -127,20 +147,3 @@ function showLocation(position) {
   axios.get(apiUrl).then(currentLocationTemperature);
 }
 navigator.geolocation.getCurrentPosition(showLocation);
-
-/*function showCelsius(event) {
-  event.preventDefault();
-  let currentTemp = document.querySelector(".currentTemp");
-  currentTemp.innerHTML = "21°C";
-}
-let celsiusButton = document.querySelector(".celsius");
-celsiusButton.addEventListener("click", showCelsius);
-
-function showFahrenheit(event) {
-  event.preventDefault();
-  let currentTemp = document.querySelector(".currentTemp");
-  currentTemp.innerHTML = "69.8F";
-}
-let fahrenheitButton = document.querySelector(".fahrenheit");
-fahrenheitButton.addEventListener("click", showFahrenheit); 
-*/
