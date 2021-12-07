@@ -1,7 +1,5 @@
 function formatDate(timestamp) {
   let now = new Date(timestamp);
-  //let para = document.querySelector("#time");
-
   let hours = now.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -43,10 +41,6 @@ function formatDate(timestamp) {
 function showTemperature(response) {
   console.log(response);
   document.querySelector("#current-city").innerHTML = response.data.name;
-
-  //let temperatureInput = Math.round(response.data.main.temp);
-  //let newTemp = document.querySelector(".currentTemp");
-  //newTemp.innerHTML = `${temperatureInput}°C`;
   celsiusTemperature = response.data.main.temp;
   document.querySelector(".currentTemp").innerHTML = `${Math.round(
     celsiusTemperature
@@ -86,20 +80,20 @@ function searchCurrent(event) {
   //cityInput.innerHTML = `${searchInput.value}`;
   //let apiKey = "409c92218249e96f0e8de22a43f0bc4b";
   // let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&appid=${apiKey}&units=metric`;
-  //axios.get(apiUrl).then(showTemperature);
+
   search(searchInput);
 }
 function showFahrenheit(event) {
   event.preventDefault();
   let currentTemp = document.querySelector(".currentTemp");
   fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  currentTemp.innerHTML = Math.round(fahrenheitTemperature);
+  currentTemp.innerHTML = `${Math.round(fahrenheitTemperature)}°F`;
 }
 let celsiusTemperature = null;
 function showCelsius(event) {
   event.preventDefault();
   let currentTemp = document.querySelector(".currentTemp");
-  currentTemp.innerHTML = Math.round(celsiusTemperature);
+  currentTemp.innerHTML = `${Math.round(celsiusTemperature)}°C`;
 }
 
 let form = document.querySelector("#search-form");
