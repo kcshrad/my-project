@@ -26,7 +26,7 @@ h1 {
 
 #time {
   margin: 0;
-  padding: 15px;
+
   font-size: 15px;
   color: #6ad5f8;
   font-weight: bold;
@@ -37,7 +37,8 @@ p {
 }
 #icon {
   display: block;
-  width: 100px;
+  width: 150px;
+  margin: 0;
 }
 img {
   width: 30px;
@@ -45,7 +46,6 @@ img {
 
 .container {
   max-width: 500px;
-
   border: solid;
   border-radius: 15px;
   border-color: #6ad5f8;
@@ -60,7 +60,8 @@ img {
 .description {
   color: #6ad5f8;
   margin: 0;
-  padding: 15px;
+
+  font-weight: bold;
 }
 .currentTemp {
   font-size: 40px;
@@ -77,6 +78,7 @@ img {
 }
 #pressure {
   color: #6ad5f8;
+  margin: 0;
 }
 #humidity {
   color: #6ad5f8;
@@ -85,7 +87,6 @@ img {
   font-weight: initial;
   font-size: 15px;
   text-align: center;
-  padding: 10px;
 }
 
 .week {
