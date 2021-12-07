@@ -1,12 +1,12 @@
 h1 {
-  color: #6ad5f8;
+  color: #0690be;
   font-size: 25px;
   padding: 15px;
   margin: 0 auto;
 }
 #city {
   border-radius: 80px;
-  padding: 10px;
+  padding: 5px;
   border-color: #6ad5f8;
 }
 .form-control {
@@ -26,13 +26,12 @@ h1 {
 
 #time {
   margin: 0;
-
   font-size: 15px;
-  color: #6ad5f8;
+  color: #0690be;
   font-weight: bold;
 }
 p {
-  color: #6ad5f8;
+  color: #0690be;
   font-size: 15px;
 }
 #icon {
@@ -47,8 +46,13 @@ img {
 .container {
   max-width: 500px;
   border: solid;
+  background: radial-gradient(
+    circle at -2.2% -3.8%,
+    rgba(255, 227, 2, 0.41) 0%,
+    rgb(59, 188, 241) 100.2%
+  );
   border-radius: 15px;
-  border-color: #6ad5f8;
+  border-color: #0690be;
   bottom: 0;
   max-height: 600px;
   display: block;
@@ -58,39 +62,39 @@ img {
 }
 
 .description {
-  color: #6ad5f8;
+  color: hsla(53, 98%, 51%, 0.904);
   margin: 0;
-
-  font-weight: bold;
+  font-size: 20px;
 }
 .currentTemp {
   font-size: 40px;
-  color: #6ad5f8;
+  color: hsla(53, 98%, 51%, 0.9045);
 }
 .celsius,
 .fahrenheit {
   border: none;
-  color: #6ad5f8;
+  color: #0690be;
 }
 
 #days {
-  color: #6ad5f8;
+  color: #0690be;
 }
 #pressure {
-  color: #6ad5f8;
+  color: hsla(53, 98%, 51%, 0.904);
   margin: 0;
 }
 #humidity {
-  color: #6ad5f8;
+  color: hsla(53, 98%, 51%, 0.904);
 }
 .message {
   font-weight: initial;
   font-size: 15px;
   text-align: center;
+  color: hsla(53, 98%, 51%, 0.904);
 }
 
 .week {
-  color: #6ad5f8;
+  color: #0690be;
 }
 #code,
 a {
