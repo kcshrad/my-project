@@ -76,7 +76,7 @@ img {
   color: #0690be;
 }
 
-#days {
+#weather-forecast {
   color: #0690be;
 }
 #pressure {
@@ -95,6 +95,14 @@ img {
 
 .week {
   color: #0690be;
+  font-weight: bold;
+}
+.weather-forecast-temp-max {
+  font-weight: bold;
+  font-size: small;
+}
+.weather-forecast-temp-min {
+  font-size: small;
 }
 #code,
 a {
