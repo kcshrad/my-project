@@ -38,6 +38,35 @@ function formatDate(timestamp) {
   return `${hours}:${minutes} <br/>${day} ${date}, ${month} ${year}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = "";
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="row">
+        <div class="col-12">
+          <div class="week">${day}</div>
+          <img
+            src="http://openweathermap.org/img/wn/50d@2x.png"
+            alt=""
+            width="42"
+          />
+          <div class="weather-forecast-temp">
+            <span class="weather-forecast-temp-min">L:11°C</span>
+            <span class="weather-forecast-temp-max">H:24°C</span>
+          </div>
+        </div>
+      
+    
+  </div>
+  `;
+  });
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   console.log(response);
   document.querySelector("#current-city").innerHTML = response.data.name;
@@ -90,6 +119,7 @@ function showFahrenheit(event) {
   currentTemp.innerHTML = `${Math.round(fahrenheitTemperature)}°F`;
 }
 let celsiusTemperature = null;
+
 function showCelsius(event) {
   event.preventDefault();
   let currentTemp = document.querySelector(".currentTemp");
@@ -106,6 +136,7 @@ let celsiusButton = document.querySelector(".celsius");
 celsiusButton.addEventListener("click", showCelsius);
 
 search("New York");
+displayForecast();
 
 function currentLocationTemperature(response) {
   //let temperature = Math.round(response.data.main.temp);
