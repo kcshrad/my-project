@@ -8,6 +8,7 @@ h1 {
   border-radius: 80px;
   padding: 5px;
   border-color: #6ad5f8;
+  margin: 0 auto;
 }
 .form-control {
   border-radius: 80px;
@@ -21,22 +22,23 @@ h1 {
   padding: 5px;
   border-color: #6ad5f8;
   background-color: #6ad5f8;
-  margin: 5px;
+  margin: 10px;
 }
 
 #time {
   margin: 0;
   font-size: 15px;
   color: #0690be;
-  font-weight: bold;
 }
 p {
-  color: #0690be;
-  font-size: 15px;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 auto;
 }
 #icon {
   display: block;
-  width: 150px;
+  width: 120px;
   margin: 0;
 }
 img {
@@ -44,7 +46,7 @@ img {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 400px;
   border: solid;
   background: radial-gradient(
     circle at -2.2% -3.8%,
@@ -63,12 +65,14 @@ img {
 
 .description {
   color: hsla(53, 98%, 51%, 0.904);
-  margin: 0;
+  margin: 0 auto;
   font-size: 20px;
 }
 .currentTemp {
-  font-size: 40px;
+  font-size: 30px;
   color: hsla(53, 98%, 51%, 0.9045);
+  padding: auto;
+  margin: 0;
 }
 .celsius,
 .fahrenheit {
@@ -86,12 +90,6 @@ img {
 #humidity {
   color: hsla(53, 98%, 51%, 0.904);
 }
-.message {
-  font-weight: initial;
-  font-size: 15px;
-  text-align: center;
-  color: hsla(53, 98%, 51%, 0.904);
-}
 
 .week {
   color: #0690be;
@@ -100,6 +98,7 @@ img {
 .weather-forecast-temp-max {
   font-weight: bold;
   font-size: small;
+  color: #0690be;
 }
 .weather-forecast-temp-min {
   font-size: small;
@@ -107,4 +106,5 @@ img {
 #code,
 a {
   font-size: small;
+  text-align: center;
 }

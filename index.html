@@ -17,20 +17,20 @@
     <div class="container">
       <form class="search-form" id="search-form">
         <div class="row">
-          <div class="col-9">
+          <div class="col-8">
             <input type="search" placeholder="Enter city" id="city" />
           </div>
 
           <br />
           <div class="col-3">
-            <input type="Submit" value="Search" class="form-control" />
+            <input type="Submit" value="Search" class="form-control" id="search" />
           </div>
         </div>
       </form>
       <button id="current-location">Current Location</button>
       <div class="row mt-3">
         <div class="col-6">
-          <h1 id="current-city">Sydney</h1>
+          <h1 id="current-city"></h1>
           <p>Last updated:<span id="time"></span></p>
           <img src="" id="icon" />
 
@@ -58,11 +58,10 @@
             
             </div>
             </div>
-
-            
-      <p class="message">Weather for Sydney, Australia</p>
+       <div id="code">
       <a href="https://github.com/kcshrad/my-project">Open source code</a>
-      <span id="code">by Shraddha Thapa</span>
+      ,by Shraddha Thapa
+    </div>
     </div>
 
     <script src="src/index.js"></script>
