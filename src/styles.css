@@ -1,8 +1,6 @@
 h1 {
   color: #0690be;
-  font-size: 25px;
-  padding: 15px;
-  margin: 0 auto;
+  font-size: 30px;
 }
 #city {
   border-radius: 80px;
@@ -13,22 +11,22 @@ h1 {
 .form-control {
   border-radius: 80px;
   padding: 5px;
-  border-color: #6ad5f8;
-  border-width: 2px;
+  border-color: hsla(53, 98%, 51%, 0.9045);
   width: 100px;
 }
 #current-location {
   border-radius: 80px;
   padding: 5px;
-  border-color: #6ad5f8;
+  border-color: hsla(53, 98%, 51%, 0.9045);
   background-color: #6ad5f8;
-  margin: 10px;
+  margin: 5px;
 }
 
 #time {
   margin: 0;
   font-size: 15px;
   color: #0690be;
+  padding: 5px;
 }
 p {
   color: black;
@@ -54,17 +52,17 @@ img {
     rgb(59, 188, 241) 100.2%
   );
   border-radius: 15px;
-  border-color: #0690be;
+  border-color: hsla(53, 98%, 51%, 0.9045);
   bottom: 0;
   max-height: 600px;
   display: block;
-  margin: 0 auto;
+
   padding: 30px;
   right: 0;
 }
 
 .description {
-  color: hsla(53, 98%, 51%, 0.904);
+  color: hsla(53, 89%, 82%, 0.904);
   margin: 0 auto;
   font-size: 20px;
 }
@@ -107,4 +105,6 @@ img {
 a {
   font-size: small;
   text-align: center;
+  padding: 10px;
+  margin: 5px;
 }
