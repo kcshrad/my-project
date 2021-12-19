@@ -20,6 +20,15 @@ h1 {
   border-color: hsla(53, 98%, 51%, 0.9045);
   background-color: #6ad5f8;
   margin: 5px;
+  font-size: small;
+}
+#current-location:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  background-color: wheat;
+  color: #0690be;
+
+  border-color: none;
 }
 
 #time {
