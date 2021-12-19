@@ -3,19 +3,19 @@ h1 {
   font-size: 30px;
 }
 #city {
-  border-radius: 80px;
+  border-radius: 10px;
   padding: 5px;
-  border-color: #6ad5f8;
-  margin: 0 auto;
+  display: inline;
+  border-color: hsla(53, 98%, 51%, 0.9045);
 }
 .form-control {
-  border-radius: 80px;
+  border-radius: 10px;
   padding: 5px;
   border-color: hsla(53, 98%, 51%, 0.9045);
   width: 100px;
 }
 #current-location {
-  border-radius: 80px;
+  border-radius: 10px;
   padding: 2px;
   border-color: hsla(53, 98%, 51%, 0.9045);
   background-color: #6ad5f8;
